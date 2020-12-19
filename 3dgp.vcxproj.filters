@@ -1,0 +1,777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{a4e91ba8-e32a-4df2-811d-52a2e7681346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Library\Shaders">
+      <UniqueIdentifier>{9f64f4ff-d9e0-43d7-88e1-13e6d3656a89}</UniqueIdentifier>
+      <Extensions>hlsl;hlsli</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{bcdbd2f6-f682-4c0c-abc6-6669eb6b4265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IMGUI">
+      <UniqueIdentifier>{e088147c-5fab-4c63-9fbb-ee592fd0f2a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\GPUParticle">
+      <UniqueIdentifier>{95cc3cc7-e8e0-4850-9132-9994ee1ee1d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTex">
+      <UniqueIdentifier>{c7d99e56-3e30-45bc-9123-8f922ec22696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\WICTextureLoader">
+      <UniqueIdentifier>{6cf43b2d-84ac-4230-aefd-c4bd4e6bd98c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\Bloom">
+      <UniqueIdentifier>{164c6eb4-b153-4fe3-9c0d-b2499e758ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Sources\FrameBuffer">
+      <UniqueIdentifier>{c541be28-b956-4a9e-9292-b840443b9bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\GPUParticle\Emit">
+      <UniqueIdentifier>{a6a4e080-371e-4276-912a-afaba02b87c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\GPUParticle\Simulate">
+      <UniqueIdentifier>{7758d259-1ff8-4961-be81-9b6985ea49ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\ToneMap">
+      <UniqueIdentifier>{5768b9a9-d977-4e49-b2b7-3e81f545f3fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\Billboard">
+      <UniqueIdentifier>{3ef56faf-cacc-4d24-b8f0-12b6e5e5e8ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\Sprite">
+      <UniqueIdentifier>{e0eaa065-621e-451a-a2c1-701aed7b9275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Library\Headers\FrameBuffer">
+      <UniqueIdentifier>{bed39e9c-a315-4c16-acb0-245688178d1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Headers\GPUParticle">
+      <UniqueIdentifier>{0cee9cba-0c9c-4b4b-a91d-ff2a1da0d69d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Headers\GPUParticle\Mapping">
+      <UniqueIdentifier>{9e0e0af6-912f-4093-96dd-7ed6980a0c7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Sources\GPUParticle">
+      <UniqueIdentifier>{b24e56c1-1784-4ba0-9de6-bc147153aeb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\Model">
+      <UniqueIdentifier>{d1a3729a-7b82-4518-b5b8-669df77cec48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\Glitch">
+      <UniqueIdentifier>{87998d60-2de8-4e49-b2a2-03a9bd1954c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\Geometry">
+      <UniqueIdentifier>{1429e1eb-6f36-4935-8325-98859e866287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library\Shaders\ZoomBlur">
+      <UniqueIdentifier>{043b076e-2189-4bda-9046-a4be1b6be5c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DirectXTex-master\DirectXTex\DirectXTex.inl">
+      <Filter>DirectXTex</Filter>
+    </None>
+    <None Include="Shader\Function.hlsli">
+      <Filter>Library\Shaders</Filter>
+    </None>
+    <None Include="Shader\Globals.hlsli">
+      <Filter>Library\Shaders</Filter>
+    </None>
+    <None Include="Shader\SceneConstants.hlsli">
+      <Filter>Library\Shaders</Filter>
+    </None>
+    <None Include="Shader\Billboard.hlsli">
+      <Filter>Library\Shaders\Billboard</Filter>
+    </None>
+    <None Include="Shader\Bloom.hlsli">
+      <Filter>Library\Shaders\Bloom</Filter>
+    </None>
+    <None Include="Shader\EmittedParticleHF.hlsli">
+      <Filter>Library\Shaders\GPUParticle</Filter>
+    </None>
+    <None Include="Shader\SpriteBatch.hlsli">
+      <Filter>Library\Shaders\Sprite</Filter>
+    </None>
+    <None Include="Shader\Model.hlsli">
+      <Filter>Library\Shaders\Model</Filter>
+    </None>
+    <None Include="Shader\GeometricPrimitive.hlsli">
+      <Filter>Library\Shaders\Geometry</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\SceneManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Light.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_widgets.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_ja_gryph_ranges.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_demo.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_draw.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_impl_dx11.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_impl_win32.cpp">
+      <Filter>IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Texture.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\WICTextureLoader\WICTextureLoader.cpp">
+      <Filter>Library\WICTextureLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\BC.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\BC4BC5.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\BC6HBC7.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\BCDirectCompute.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexCompress.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexCompressGPU.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexConvert.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexD3D11.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexDDS.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexFlipRotate.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexHDR.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexImage.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexMipmaps.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexMisc.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexNormalMaps.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexPMAlpha.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexResize.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexTGA.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexUtil.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex-master\DirectXTex\DirectXTexWIC.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CharacterSystem.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OBJ3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Audio.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\WAVFileReader.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SceneGame.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BG.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\GeometricPrimitive.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Collision.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CollisionJudge.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EnemyManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Enemy.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FrameBuffer.cpp">
+      <Filter>Library\Sources\FrameBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Rasterizer.cpp">
+      <Filter>Library\Sources\FrameBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Shader.cpp">
+      <Filter>Library\Sources\FrameBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Bloom.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\RenderState.cpp">
+      <Filter>Library\Sources\FrameBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlayerShot.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ParticleSystem.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CountDown.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ToneMap.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Combo.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Billboard.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Score.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameTimer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlayerHpUi.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlayerDestoryEffect.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Title.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Menu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Ranking.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Sound.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TrackingScore.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FloorFillEffect.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Tutorial.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Pause.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Camera.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Easing.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FbxLoader.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\FrameWork.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Logger.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\InputDevice.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Main.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Model.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ModelRenderer.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ModelResource.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\MyLib.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\Sprite.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\GPUParticle\EmitParticle.cpp">
+      <Filter>Library\Sources\GPUParticle</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\GPUParticle\GPUParticleBuffers.cpp">
+      <Filter>Library\Sources\GPUParticle</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\GPUParticle\LoadShader.cpp">
+      <Filter>Library\Sources\GPUParticle</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MetaAI.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Library\ZoomBlur.cpp">
+      <Filter>Library\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Ultimate.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Scene.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SceneManager.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Light.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_truetype.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imconfig.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_impl_dx11.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_impl_win32.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_internal.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_rectpack.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imstb_textedit.h">
+      <Filter>IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Texture.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex-master\WICTextureLoader\WICTextureLoader.h">
+      <Filter>Library\WICTextureLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex-master\DirectXTex\BC.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex-master\DirectXTex\BCDirectCompute.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex-master\DirectXTex\DDS.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex-master\DirectXTex\DirectXTex.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex-master\DirectXTex\DirectXTexP.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex-master\DirectXTex\filters.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex-master\DirectXTex\scoped.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Mapper.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\CommonInclude.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CharacterSystem.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Player.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OBJ3D.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\WAVFileReader.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Audio.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SceneGame.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\BG.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GeometricPrimitive.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Collision.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CollisionJudge.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EnemyManager.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Enemy.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Shader.h">
+      <Filter>Library\Headers\FrameBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Rasterizer.h">
+      <Filter>Library\Headers\FrameBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\FrameBuffer.h">
+      <Filter>Library\Headers\FrameBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Bloom.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ConstantBuffer.h">
+      <Filter>Library\Headers\FrameBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\RenderState.h">
+      <Filter>Library\Headers\FrameBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlayerShot.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ParticleSystem.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Constant.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CountDown.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ToneMap.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Combo.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Billboard.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Score.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameTimer.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlayerHpUi.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PlayerDestoryEffect.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Title.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Menu.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Ranking.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sound.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TrackingScore.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FloorFillEffect.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Tutorial.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GlitchFillter.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Pause.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Camera.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Easing.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\FbxLoader.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\FrameWork.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\HighResolutionTimer.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\InputDevice.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Logger.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Misc.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Model.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ModelData.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ModelRenderer.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ModelResource.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\MyLib.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\Sprite.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GPUParticle\ConstantBufferMapping.h">
+      <Filter>Library\Headers\GPUParticle\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GPUParticle\ResourceMapping.h">
+      <Filter>Library\Headers\GPUParticle\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GPUParticle\SamplerMapping.h">
+      <Filter>Library\Headers\GPUParticle\Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GPUParticle\EmitParticle.h">
+      <Filter>Library\Headers\GPUParticle</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GPUParticle\GPUParticleBuffers.h">
+      <Filter>Library\Headers\GPUParticle</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GPUParticle\LoadShader.h">
+      <Filter>Library\Headers\GPUParticle</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GPUParticle\ShaderInTerop.h">
+      <Filter>Library\Headers\GPUParticle</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GPUParticle\ShaderInTerop_EmittedPaticle.h">
+      <Filter>Library\Headers\GPUParticle</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\GPUParticle\ShaderInTeropRenderer.h">
+      <Filter>Library\Headers\GPUParticle</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MetaAI.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Library\ZoomBlur.h">
+      <Filter>Library\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Ultimate.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EditParameter.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="3dgp.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Data\icon\icon.ico">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shader\BillboardDissolve.hlsl">
+      <Filter>Library\Shaders\Billboard</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\BillboardGaugePS.hlsl">
+      <Filter>Library\Shaders\Billboard</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\BillboardGritchPS.hlsl">
+      <Filter>Library\Shaders\Billboard</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\BillboardPS.hlsl">
+      <Filter>Library\Shaders\Billboard</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\BillboardVS.hlsl">
+      <Filter>Library\Shaders\Billboard</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleEmitCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Emit</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleEmitEnemyKill2CS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Emit</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleEmitEnemyKillCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Emit</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleEmitFloorCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Emit</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleEmitSpawnPlayerCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Emit</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleEmitTitle.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Emit</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleEmitTrackingScoreCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Emit</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleEnemyKillSimulate2CS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Simulate</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleEnemyKillSimulateCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Simulate</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleFinish.hlsl">
+      <Filter>Library\Shaders\GPUParticle</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleKickOffCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleMeshEmitCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Emit</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticlePlayerShotSimulateCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Simulate</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleSimulateCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Simulate</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleSimulateShotCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Simulate</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleSimulateTitleCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Simulate</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticleSimulateTrackingScoreCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Simulate</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticlePS.hlsl">
+      <Filter>Library\Shaders\GPUParticle</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmittedParticleVS.hlsl">
+      <Filter>Library\Shaders\GPUParticle</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\GaussConvolution.hlsl">
+      <Filter>Library\Shaders\Bloom</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\GaussDownSampling.hlsl">
+      <Filter>Library\Shaders\Bloom</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\GaussHorizontal.hlsl">
+      <Filter>Library\Shaders\Bloom</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\GaussVertical.hlsl">
+      <Filter>Library\Shaders\Bloom</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\SpriteBatchVS.hlsl">
+      <Filter>Library\Shaders\Sprite</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\SpriteBatchDissolvePS.hlsl">
+      <Filter>Library\Shaders\Sprite</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\SpriteBatchPS.hlsl">
+      <Filter>Library\Shaders\Sprite</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\GlowExtracionPS.hlsl">
+      <Filter>Library\Shaders\Bloom</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\ToneMapPS.hlsl">
+      <Filter>Library\Shaders\ToneMap</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\AverageLuminancePS.hlsl">
+      <Filter>Library\Shaders\ToneMap</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\ModelPS.hlsl">
+      <Filter>Library\Shaders\Model</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\ModelVS.hlsl">
+      <Filter>Library\Shaders\Model</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\GlitchFillter.hlsl">
+      <Filter>Library\Shaders\Glitch</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\EmitParticlePlayerShotDestoryCS.hlsl">
+      <Filter>Library\Shaders\GPUParticle\Emit</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\GeometricPrimitivePS.hlsl">
+      <Filter>Library\Shaders\Geometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\GeometricPrimitiveVS.hlsl">
+      <Filter>Library\Shaders\Geometry</Filter>
+    </FxCompile>
+    <FxCompile Include="Shader\ZoomBlurPS.hlsl">
+      <Filter>Library\Shaders\ZoomBlur</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

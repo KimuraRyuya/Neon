@@ -1,0 +1,117 @@
+{
+    "value0": [
+        {
+            "ptr_wrapper": {
+                "id": 2147483649,
+                "data": {
+                    "cereal_class_version": 1,
+                    "value0": 5,
+                    "value1": 0,
+                    "value2": 0,
+                    "value3": 0,
+                    "value4": 0,
+                    "value5": 2.0,
+                    "value6": 3.5,
+                    "value7": 4.0,
+                    "value8": 6.0
+                }
+            }
+        },
+        {
+            "ptr_wrapper": {
+                "id": 2147483650,
+                "data": {
+                    "value0": 5,
+                    "value1": 0,
+                    "value2": 0,
+                    "value3": 0,
+                    "value4": 0,
+                    "value5": 2.0,
+                    "value6": 3.5,
+                    "value7": 4.0,
+                    "value8": 6.0
+                }
+            }
+        },
+        {
+            "ptr_wrapper": {
+                "id": 2147483651,
+                "data": {
+                    "value0": 5,
+                    "value1": 0,
+                    "value2": 0,
+                    "value3": 0,
+                    "value4": 0,
+                    "value5": 2.0,
+                    "value6": 3.5,
+                    "value7": 4.0,
+                    "value8": 6.0
+                }
+            }
+        },
+        {
+            "ptr_wrapper": {
+                "id": 2147483652,
+                "data": {
+                    "value0": 5,
+                    "value1": 0,
+                    "value2": 0,
+                    "value3": 0,
+                    "value4": 0,
+                    "value5": 2.0,
+                    "value6": 3.5,
+                    "value7": 4.0,
+                    "value8": 6.0
+                }
+            }
+        },
+        {
+            "ptr_wrapper": {
+                "id": 2147483653,
+                "data": {
+                    "value0": 30,
+                    "value1": 3,
+                    "value2": 4,
+                    "value3": 3,
+                    "value4": 2,
+                    "value5": 2.5999999046325685,
+                    "value6": 3.799999952316284,
+                    "value7": 4.599999904632568,
+                    "value8": 5.800000190734863
+                }
+            }
+        },
+        {
+            "ptr_wrapper": {
+                "id": 2147483654,
+                "data": {
+                    "value0": 30,
+                    "value1": 4,
+                    "value2": 5,
+                    "value3": 5,
+                    "value4": 4,
+                    "value5": 2.5,
+                    "value6": 3.5,
+                    "value7": 4.5,
+                    "value8": 5.5
+                }
+            }
+        },
+        {
+            "ptr_wrapper": {
+                "id": 2147483655,
+                "data": {
+                    "value0": 20,
+                    "value1": 0,
+                    "value2": 0,
+                    "value3": 0,
+                    "value4": 0,
+                    "value5": 1.0,
+                    "value6": 1.5,
+                    "value7": 2.0,
+                    "value8": 2.5
+                }
+            }
+        }
+    ]
+}

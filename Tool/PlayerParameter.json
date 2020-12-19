@@ -1,0 +1,18 @@
+{
+    "value0": {
+        "ptr_wrapper": {
+            "id": 2147483649,
+            "data": {
+                "cereal_class_version": 0,
+                "value0": 10,
+                "value1": 16,
+                "value2": 20,
+                "value3": 0.014999999664723874,
+                "value4": 0.029999999329447748,
+                "value5": 100.0,
+                "value6": 3.0,
+                "value7": -150.0
+            }
+        }
+    }
+}
