@@ -2,6 +2,7 @@
 #include "../Library/FbxLoader.h"
 #include "../Library/FrameWork.h"
 #include "../Library/MyLib.h"
+#include "ParticleSystem.h"
 #include <imgui.h>
 #include <shellapi.h>
 #include "Sound.h"
@@ -60,6 +61,12 @@ SceneState Title::Update(float elapsedTime)
 		dissolve = 2.0f;
 	}
 
+	if (!canNextSceneState)
+	{
+		ParticleSystem::GetInstance()->titleParticle[0]->Burst(1, DirectX::XMFLOAT3(titleTexPos.x + 4.4f, titleTexPos.y, -titleTexPos.z), elapsedTime, 0.0f, 0.0f);
+		ParticleSystem::GetInstance()->titleParticle[1]->Burst(1, DirectX::XMFLOAT3(titleTexPos.x - 4.4f, titleTexPos.y, -titleTexPos.z), elapsedTime, 0.0f, 0.0f);
+	}
+
 	// Aƒ{ƒ^ƒ“‰Ÿ‚µ‚½‚çdissolve‹N“®
 	if (PAD->xb.A_BUTTON && !canNextSceneState && GetDissolve() == 0.0f)
 	{
@@ -104,6 +111,9 @@ void Title::Render(std::shared_ptr<BG> bg)
 
 	pressATexure->RenderGlitch(_pressAPos, 0.0f, 0.0f, 512.0f, 256.0f, dissolve, { 0.0f, 0.0f, 0.0f }, { 4.0f, 2.0f }, { 50.0f, 50.0f, 50.0f, 1.0f }, { 1.0f, 1.0f, 1.0f, 1.0f }, { 1.0f, 1.0f, 1.0f, 1.0f });
 	pressATexure->End();
+
+	ParticleSystem::GetInstance()->BloomRender();
+
 	framebuffers[0]->DeActivate(pFrameWork.GetContext());
 
 	///generate bloom texture from scene framebuffer

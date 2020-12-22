@@ -165,6 +165,29 @@ void ParticleSystem::Initialize()
 		trakingScoreLocus->setParticleInfo(particleInfo);
 		trakingScoreLocus->Initialize(L"Data/Texture/player_shot.png", false);
 	}
+
+	// ƒ^ƒCƒgƒ‹‚ÌParticle
+	{
+		titleParticle[0] = std::make_unique<EmitParticle>();
+		titleParticle[1] = std::make_unique<EmitParticle>();
+		titleParticle[0]->SetMaxParticleCount(100000);
+		titleParticle[1]->SetMaxParticleCount(100000);
+		particleInfo.speed = 2;
+		particleInfo.size = 0.1f;
+		particleInfo.scaleX = 0.05f;
+		particleInfo.life = 2.0f;
+		particleInfo.motionBlurAmount = 0.0f;
+		particleInfo.rotation = 0.05f;
+		particleInfo.color = 30.0f;
+		titleParticle[0]->setEmitShader("EmitParticleTitleLeftEmitCS.cso");
+		titleParticle[1]->setEmitShader("EmitParticleTitleRightEmitCS.cso");
+		titleParticle[0]->setParticleInfo(particleInfo);
+		particleInfo.speed = -2;
+		titleParticle[1]->setParticleInfo(particleInfo);
+		titleParticle[0]->Initialize(L"Data/Texture/titleParticle.png", false);
+		titleParticle[1]->Initialize(L"Data/Texture/titleParticle.png", false);
+
+	}
 }
 
 void ParticleSystem::Update(float elapsedTime)
@@ -175,6 +198,8 @@ void ParticleSystem::Update(float elapsedTime)
 	}
 	playerShotDestroyParticle[0]->UpdateGPU();
 	playerShotDestroyParticle[1]->UpdateGPU();
+	titleParticle[0]->UpdateGPU();
+	titleParticle[1]->UpdateGPU();
 	floorParticle->UpdateGPU();
 	playerDestroyParticle->UpdateGPU();
 	playerDashParticle->UpdateGPU();
@@ -212,6 +237,8 @@ void ParticleSystem::BloomRender()
 
 	playerShotDestroyParticle[0]->Draw();
 	playerShotDestroyParticle[1]->Draw();
+	titleParticle[0]->Draw();
+	titleParticle[1]->Draw();
 	playerDestroyParticle->Draw();
 	playerDashParticle->Draw();
 	floorParticle->Draw();
